@@ -1,3 +1,33 @@
+#################### SUPERHERO CRUD ##############################
+###
+POST http://localhost:3000/api/v1/superheros/superhero HTTP/1.1
+Content-Type: application/json
+
+{
+  "superhero":"Flash",
+  "realname":"Felipe"
+}
+
+###
+GET http://localhost:3000/api/v1/superheros/superhero HTTP/1.1
+
+###
+GET http://localhost:3000/api/v1/superheros/superhero/623fcf2c4be5fcf981488176 HTTP/1.1
+
+###
+PUT http://localhost:3000/api/v1/superheros/superhero/623fcf2c4be5fcf981488176 HTTP/1.1
+Content-Type: application/json
+
+{
+  "superhero":"Flash",
+  "realname":"Gabriel"
+}
+
+###
+DELETE http://localhost:3000/api/v1/superheros/superhero/623fcf2c4be5fcf981488176 HTTP/1.1
+
+##################################################################
+########################### PERSON CRUD ##########################
 ###
 POST http://localhost:3000/api/v1/people/person HTTP/1.1
 Content-Type: application/json
@@ -35,6 +65,7 @@ Content-Type: application/json
 ###
 DELETE http://localhost:3000/api/v1/people/622cd13adbeaf7b67bc5cee1 HTTP/1.1
 
+####################### DEPARTMENTS ##################################
 ###
 GET http://localhost:3000/api/v1/departaments HTTP/1.1
 
